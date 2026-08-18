@@ -3,68 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CorscheCars - Luxury & Pre-Owned Vehicles</title>
+    <title>CorscheCars - Automóviles</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Main Navigation Header -->
+    <!-- Header Estilo Cruzados -->
     <header>
-        <div class="logo">
-            <h1>CorscheCars</h1>
+        <div class="logo-container">
+            <!-- Insignia CRSC dibujada con SVG -->
+            <svg class="insignia" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                <!-- Fondo Blanco -->
+                <polygon points="0,0 100,0 50,230" fill="#FFFFFF" />
+                <!-- Cruz Azul -->
+                <rect x="42" y="0" width="16" height="200" fill="#1C488C" />
+                <rect x="15" y="45" width="70" height="16" fill="#1C488C" />
+                <!-- Letras Rojas -->
+                <text x="25" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+                <text x="75" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">R</text>
+                <text x="25" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">S</text>
+                <text x="75" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+            </svg>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="login.html">Sign In</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="index.html">NOTICIAS</a></li>
+                <li><a href="catalog.html">VEHÍCULOS</a></li>
+                <li><a href="login.html">INGRESAR</a></li>
+                
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h2>Find Your Drive</h2>
-            <p>Explore elite new arrivals and certified pre-owned vehicles.</p>
-            <a href="catalog.html" class="btn-primary">Browse Inventory</a>
-        </section>
+    <!-- Hero Inmersivo (Fuera del main para ancho completo) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>LA GLORIA ETERNA SOBRE RUEDAS</h2>
+            <p>Explora nuestro inventario de élite y vehículos seminuevos certificados con el respaldo CRSC.</p>
+            <a href="catalog.html" class="btn-primary">VER INVENTARIO</a>
+        </div>
+    </section>
 
+    <main class="container">
         <!-- Quick Search Bar -->
         <section class="quick-search">
-            <h3>Quick Vehicle Search</h3>
+            <h3>Buscador Rápido</h3>
             <form action="catalog.html" method="GET">
-                <label for="condition">Condition:</label>
+                <label for="condition" style="display:none;">Condition:</label>
                 <select id="condition" name="condition">
-                    <option value="all">All Vehicles</option>
-                    <option value="new">New</option>
-                    <option value="used">Used / Pre-Owned</option>
+                    <option value="all">Todos los Vehículos</option>
+                    <option value="new">Nuevos</option>
+                    <option value="used">Seminuevos</option>
                 </select>
 
-                <label for="brand">Brand:</label>
-                <input type="text" id="brand" name="brand" placeholder="e.g. Porsche, BMW">
+                <label for="brand" style="display:none;">Brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="Ej. Suzuki, Honda">
 
-                <button type="submit">Search</button>
+                <button type="submit">BUSCAR</button>
             </form>
         </section>
 
         <!-- Vehicle Categories -->
         <section class="categories">
-            <h2>Vehicle Categories</h2>
+            <h2>Categorías Destacadas</h2>
             <ul>
                 <li><a href="catalog.html?cat=suv">SUVs</a></li>
-                <li><a href="catalog.html?cat=sports">Sports Cars</a></li>
-                <li><a href="catalog.html?cat=electric">Electric Vehicles</a></li>
-                <li><a href="catalog.html?cat=luxury">Luxury Sedans</a></li>
-                <li><a href="catalog.html?cat=used"><strong>Used / Pre-Owned</strong></a></li>
+                <li><a href="catalog.html?cat=sports">Deportivos</a></li>
+                <li><a href="catalog.html?cat=electric">Camionetas</a></li>
+                <li><a href="catalog.html?cat=used"><strong>Seminuevos</strong></a></li>
             </ul>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 CorscheCars. All rights reserved.</p>
+        <p>&copy; 2026 CorscheCars (CRSC). Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/main.js"></script>
