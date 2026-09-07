@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorscheCars - Detalle Vehículo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="insignia" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 100,0 50,230" fill="#FFFFFF" />
+                <rect x="42" y="0" width="16" height="200" fill="#1C488C" />
+                <rect x="15" y="45" width="70" height="16" fill="#1C488C" />
+                <text x="25" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+                <text x="75" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">R</text>
+                <text x="25" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">S</text>
+                <text x="75" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="inicio-sesion.html">INGRESAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-left: 90px;">
+        <section class="quick-search" style="margin-top: 2rem;">
+            <h2 id="detalleTitulo">Cargando...</h2>
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <img id="detalleImg" src="" alt="" style="width: 100%; max-width: 450px; border-radius: 6px; object-fit: cover;">
+                <div>
+                    <h3 id="detallePrecio" style="color: #DA291C; font-size: 1.8rem; margin-bottom: 1rem;"></h3>
+                    <ul style="line-height: 2; list-style: none; padding: 0;">
+                        <li><strong>Motor:</strong> <span id="detalleMotor"></span></li>
+                        <li><strong>Transmisión:</strong> <span id="detalleTransmision"></span></li>
+                        <li><strong>Kilometraje:</strong> <span id="detalleKm"></span></li>
+                        <li><strong>Combustible:</strong> <span id="detalleCombustible"></span></li>
+                    </ul>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <button class="btn-primary" type="button" style="padding: 0.8rem 1.5rem; background: #1C488C; color: white; border: none; font-weight: bold; cursor: pointer;">AÑADIR AL CARRITO</button>
+                        <a href="vehiculos.html" style="align-self: center; color: #1C488C; font-weight: bold;">Volver al Inventario</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CorscheCars (CRSC). Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

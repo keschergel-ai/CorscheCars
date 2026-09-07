@@ -25,12 +25,14 @@
                 <text x="75" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
             </svg>
         </div>
-        <nav>
+<nav>
             <ul>
-                <li><a href="index.html">NOTICIAS</a></li>
-                <li><a href="catalog.html">VEHÍCULOS</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
                 <li><a href="inicio-sesion.html">INGRESAR</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -40,7 +42,7 @@
         <div class="hero-content">
             <h2>LA GLORIA ETERNA SOBRE RUEDAS</h2>
             <p>Explora nuestro inventario de elite y vehiculos seminuevos certificados con el respaldo CRSC.</p>
-            <a href="catalog.html" class="btn-primary">VER INVENTARIO</a>
+            <a href="vehiculos.html" class="btn-primary">VER INVENTARIO</a>
         </div>
     </section>
 
@@ -48,7 +50,7 @@
         <!-- Quick Search Bar -->
         <section class="quick-search">
             <h3>Buscador Rapido</h3>
-            <form action="catalog.html" method="GET">
+            <form action="vehiculos.html" method="GET">
                 <label for="condition" style="display:none;">Condition:</label>
                 <select id="condition" name="condition">
                     <option value="all">Todos los Vehículos</option>
@@ -57,9 +59,9 @@
                 </select>
 
                 <label for="brand" style="display:none;">Brand:</label>
-                <input type="text" id="brand" name="brand" placeholder="Ej. Suzuki, Honda">
+                <input type="text" id="buscarTexto" name="brand" placeholder="Ej. Suzuki, Honda">
 
-                <button type="submit">BUSCAR</button>
+                <button type="submit" id="btnBuscar">BUSCAR</button>
             </form>
         </section>
 
@@ -67,10 +69,10 @@
         <section class="categories">
             <h2>Categorias Destacadas</h2>
             <ul>
-                <li><a href="catalog.html?cat=suv">SUVs</a></li>
-                <li><a href="catalog.html?cat=sports">Deportivos</a></li>
-                <li><a href="catalog.html?cat=electric">Camionetas</a></li>
-                <li><a href="catalog.html?cat=used"><strong>Seminuevos</strong></a></li>
+                <li><a href="vehiculos.html?cat=suv">SUVs</a></li>
+                <li><a href="vehiculos.html?cat=sports">Deportivos</a></li>
+                <li><a href="vehiculos.html?cat=electric">Camionetas</a></li>
+                <li><a href="vehiculos.html?cat=used"><strong>Seminuevos</strong></a></li>
             </ul>
         </section>
     </main>

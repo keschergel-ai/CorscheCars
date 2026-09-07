@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorscheCars - Vehículos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="insignia" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 100,0 50,230" fill="#FFFFFF" />
+                <rect x="42" y="0" width="16" height="200" fill="#1C488C" />
+                <rect x="15" y="45" width="70" height="16" fill="#1C488C" />
+                <text x="25" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+                <text x="75" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">R</text>
+                <text x="25" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">S</text>
+                <text x="75" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="inicio-sesion.html">INGRESAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-left: 140px; padding-top: 30px; padding-right: 30px;">
+        <section class="quick-search">
+            <h3>INVENTARIO DISPONIBLE</h3>
+            <form action="vehiculos.html" method="GET">
+                <input type="text" id="buscarTexto" name="search" placeholder="Ej. Suzuki, Toyota, Honda...">
+                <button type="submit" id="btnBuscar">BUSCAR</button>
+            </form>
+        </section>
+
+        <section class="categories" style="margin-top: 2rem;">
+            <div id="catalogoVehiculos">
+                <!-- Auto 1 -->
+                <article class="card-vehiculo" data-category="sports used seminuevos" style="margin-bottom: 2rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrojVlDC-Y3UGXJKD9qiwhKu-FeHsQbGtZRjGBQpZP_g&s=10" referrerpolicy="no-referrer" alt="Suzuki Swift Sport 2023" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 4px;">
+                    <h3>Suzuki Swift Sport 2023</h3>
+                    <p><strong>$11.990.000</strong></p>
+                    <a href="detalle-vehiculo.html?id=1">Ver Detalle</a>
+                </article>
+
+                <!-- Auto 2 -->
+                <article class="card-vehiculo" data-category="suv hibrido" style="margin-bottom: 2rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbjPmaDnh1L9s19QoIPmcEv60Uefx_w8gBL4tj9GnfRQ&s=10" referrerpolicy="no-referrer" alt="Toyota RAV4 Hybrid 2024" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 4px;">
+                    <h3>Toyota RAV4 Hybrid 2024</h3>
+                    <p><strong>$24.490.000</strong></p>
+                    <a href="detalle-vehiculo.html?id=2">Ver Detalle</a>
+                </article>
+
+                <!-- Auto 3: Ford F-150 -->
+                <article class="card-vehiculo" data-category="electric camioneta camionetas truck" style="margin-bottom: 2rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ0d-15TVkJjriMNwwTa3EMqM4ROpmpURooUf36OThww&s=10" referrerpolicy="no-referrer" alt="Ford F-150 Lariat 4x4" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 4px;">
+                    <h3>Ford F-150 Lariat 4x4</h3>
+                    <p><strong>$38.990.000</strong></p>
+                    <a href="detalle-vehiculo.html?id=3">Ver Detalle</a>
+                </article>
+
+                <!-- Auto 4 -->
+                <article class="card-vehiculo" data-category="sports used seminuevos" style="margin-bottom: 2rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0VS4Mow6GeQ6N2bL0K1sHxnNBPEmxxb5ofbRUegZzw&s=10" referrerpolicy="no-referrer" alt="Honda Civic Type R 2023" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 4px;">
+                    <h3>Honda Civic Type R 2023</h3>
+                    <p><strong>$32.990.000</strong></p>
+                    <a href="detalle-vehiculo.html?id=4">Ver Detalle</a>
+                </article>
+
+                <!-- Auto 5 -->
+                <article class="card-vehiculo" data-category="sports" style="margin-bottom: 2rem;">
+                    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=600" referrerpolicy="no-referrer" alt="Porsche 911 Carrera S 2024" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 4px;">
+                    <h3>Porsche 911 Carrera S 2024</h3>
+                    <p><strong>$125.000.000</strong></p>
+                    <a href="detalle-vehiculo.html?id=5">Ver Detalle</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CorscheCars (CRSC). Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

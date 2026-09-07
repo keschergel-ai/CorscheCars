@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorscheCars - Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="insignia" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 100,0 50,230" fill="#FFFFFF" />
+                <rect x="42" y="0" width="16" height="200" fill="#1C488C" />
+                <rect x="15" y="45" width="70" height="16" fill="#1C488C" />
+                <text x="25" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+                <text x="75" y="38" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">R</text>
+                <text x="25" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">S</text>
+                <text x="75" y="88" font-family="Arial" font-weight="900" font-size="26" fill="#DA291C" text-anchor="middle">C</text>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="vehiculos.html">VEHÍCULOS</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="inicio-sesion.html">INGRESAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Espaciado seguro para evitar colisión con el logo SVG -->
+    <main class="container" style="padding-left: 120px; padding-top: 30px; padding-right: 30px;">
+        <h2 style="margin-bottom: 1.5rem; color: #1C488C;">Contáctanos</h2>
+        
+        <form style="max-width: 550px; display: flex; flex-direction: column; gap: 15px;">
+            <div>
+                <label for="nombre" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            <div>
+                <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            <div>
+                <label for="mensaje" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+            </div>
+            <button type="submit" style="background-color: #1C488C; color: white; padding: 12px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; width: fit-content;">ENVIAR MENSAJE</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CorscheCars (CRSC). Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
