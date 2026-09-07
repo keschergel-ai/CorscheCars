@@ -232,3 +232,23 @@ footer {
     padding: 2rem;
     margin-top: 2rem;
 }
+/* Ajuste de margen para liberar el logo en celulares */
+@media (max-width: 768px) {
+    nav {
+        margin-left: 70px !important;
+    }
+
+    nav ul {
+        gap: 8px !important;
+        justify-content: flex-start !important;
+    }
+
+    nav ul li a {
+        font-size: 12px !important;
+    }
+
+    .hero-content h2 {
+        font-size: 22px !important;
+        line-height: 1.2;
+    }
+}
